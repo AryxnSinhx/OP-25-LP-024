@@ -6,5 +6,4 @@ plotly
 matplotlib
 xgboost
 joblib
-sklearn
-tsne
+scikit-learn

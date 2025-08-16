@@ -33,7 +33,7 @@ We applied t-SNE (a dimensionality reduction method) to visually inspect how the
 # =======================
 # Hidden Step 1: Preprocessing
 # =======================
-df = pd.read_csv(r'files_app\Survey Reprised 2.0.csv')
+df = pd.read_csv(r'files_app/Survey Reprised 2.0.csv')
 df_filtered = df[(df['Age'] >= 21) & (df['Age'] <= 45)]
 
 features = [
@@ -124,3 +124,4 @@ with st.expander("📄 Show Full Clustered Dataset"):
 # Footer
 st.markdown("---")
 st.markdown("Built with ❤️ by NeuronInsights")
+

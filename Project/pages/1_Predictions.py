@@ -4,10 +4,10 @@ import numpy as np
 import joblib
 
 # Load models
-clf_model = joblib.load(r'files_app/classification_model.pkl')
-reg_model = joblib.load(r'files_app/regression_model.pkl')
-scaler = joblib.load(r'files_app/scaler.pkl')
-label_encoders = joblib.load(r'files_app/label_encoders.pkl')
+clf_model = joblib.load(r'Project/files_app/classification_model.pkl')
+reg_model = joblib.load(r'Project/files_app/regression_model.pkl')
+scaler = joblib.load(r'Project/files_app/scaler.pkl')
+label_encoders = joblib.load(r'Project/files_app/label_encoders.pkl')
 
 st.title("🔍 Prediction Center")
 
@@ -126,3 +126,4 @@ with tab2:
     except Exception as e:
 
         st.error(f"❌ Prediction failed: {e}")
+

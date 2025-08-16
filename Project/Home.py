@@ -64,8 +64,8 @@ To bridge machine learning with mental health awareness — transforming numbers
 
 
 # Load Data
-df_clean = pd.read_csv(r"files_app/Survey Reprised 2.0.csv")
-df_raw = pd.read_csv(r"files_app/survey.csv")
+df_clean = pd.read_csv(r"Project/files_app/Survey Reprised 2.0.csv")
+df_raw = pd.read_csv(r"Project/files_app/survey.csv")
 
 # Display first five rows of cleaned dataset
 st.subheader("🔍 Sample of Cleaned Dataset")
@@ -180,3 +180,4 @@ with col2:
 st.markdown("---")
 
 st.markdown("📊 Dashboard built with ❤️ using Streamlit.")
+

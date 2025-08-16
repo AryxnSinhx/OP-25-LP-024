@@ -91,7 +91,7 @@ with col1:
     show_insight("Most participants are between 20 and 35. Some age outliers exist.")
 
 with col2:
-    st.subheader("2. Missing Data Contribution (Raw Dataset)")
+    st.subheader("2. Missing Data Contribution")
     missing_raw = df_raw.isnull().sum()
     missing_raw = missing_raw[missing_raw > 0]
     total_missing = missing_raw.sum()
@@ -108,7 +108,7 @@ st.header("👩‍💼 Gender-Based Analysis")
 col1, col2 = st.columns([1, 1])
 
 with col1:
-    st.subheader("3. Seek Help by Gender")
+    st.subheader("3. Seek Help")
     fig, ax = plt.subplots(figsize=(5, 3.5))
     sns.countplot(data=df_clean, x="seek_help", hue="Gender_cleaned", ax=ax)
     fig.tight_layout()
@@ -116,7 +116,7 @@ with col1:
     show_insight("Females are more likely to seek help compared to males.")
 
 with col2:
-    st.subheader("4. Mental Health Interview by Gender")
+    st.subheader("4. Mental Health Interview")
     fig, ax = plt.subplots(figsize=(5, 3.5))
     sns.countplot(data=df_clean, x="mental_health_interview", hue="Gender_cleaned", ax=ax)
     fig.tight_layout()
@@ -175,7 +175,7 @@ with col1:
     show_insight("A considerable number of individuals still do not seek help.")
 
 with col2:
-    st.subheader("11. Heatmap: Work Interference vs Treatment")
+    st.subheader("11. Work Interference vs Treatment")
     heat_df = df_clean[['work_interfere', 'treatment']].dropna().copy()
     heat_df['work_interfere'] = heat_df['work_interfere'].astype('category').cat.codes
     heat_df['treatment'] = heat_df['treatment'].astype('category').cat.codes
@@ -188,3 +188,4 @@ with col2:
 # Footer
 st.markdown("---")
 st.markdown("📊 Dashboard built with ❤️ using Streamlit.")
+

@@ -1,7 +1,5 @@
 🧠 Mental Wellness Analysis and Support Strategy
-Capstone Project 2025 – OpenLearn Cohort 1.0
-
-
+Project.
 
 📌 Objective
 This project analyzes mental health in the tech industry using machine learning to:
